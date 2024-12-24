@@ -41,6 +41,27 @@ article {
     padding: 15px;
 }
 
+/* Header Styling */
+header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+
 article h3 {
     color: #555;
 }
