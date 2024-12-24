@@ -1,4 +1,4 @@
-/* style.css */
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -8,22 +8,65 @@ body {
     color: #333; /* Dark grey for text */
 }
 
-/* Header and Footer Styling */
-header, footer {
-    background-color: #003f5c; /* Unified deep teal for both header and footer */
-    color: #fff; /* White text for clear readability */
-    padding: 10px 20px;
+/* Header Styling */
+header {
+    background-color: #005f73; /* Lighter teal for the title section */
+    color: #fff;
+    padding: 20px 20px 0; /* Padding with no bottom padding for seamless menu placement */
 }
 
-header nav a, footer a {
-    color: #e0e0e0; /* Light grey for links to contrast with dark background */
+header h1 {
+    margin: 0;
+    font-size: 2rem; /* Adjusted for a strong title presence */
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 50px; /* Standard logo height */
+    vertical-align: middle;
+}
+
+/* Navigation Menu Styling */
+header nav {
+    background-color: #003f5c; /* Darker teal for menu */
+    text-align: center;
+    padding: 10px 0;
+}
+
+header nav a {
+    color: #e0e0e0; /* Light grey links for readability */
     text-decoration: none;
     margin: 0 10px;
+    font-size: 1rem;
 }
 
-header nav a:hover, footer a:hover {
+header nav a:hover {
+    color: #ffffff; /* White on hover for emphasis */
     text-decoration: underline;
-    color: #ffffff; /* Pure white on hover for emphasis */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003f5c; /* Match footer with menu colour */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffffff;
 }
 
 /* Main Content Styling */
@@ -35,7 +78,6 @@ h1, h2 {
     color: #444; /* Dark grey for headings */
 }
 
-/* Article Styling */
 article {
     background: #fff; /* White background for articles */
     border: 1px solid #ddd; /* Light grey border */
@@ -45,21 +87,20 @@ article {
 }
 
 article h3 {
-    color: #003f5c; /* Match header/footer colour for a cohesive look */
+    color: #005f73; /* Match lighter teal for article headings */
 }
 
-/* Header Logo and Navigation Styling */
-header img {
-    vertical-align: middle;
+/* Quick Links Section Styling */
+section#links ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-header nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #e0e0e0; /* Light grey links for readability */
+section#links ul li {
+    margin: 5px 0;
 }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: #ffffff; /* White text for hover effect */
+/* About Section Styling */
+section#about p {
+    margin: 15px 0;
 }
