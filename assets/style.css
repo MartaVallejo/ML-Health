@@ -9,27 +9,21 @@ body {
 }
 
 /* Header and Footer Styling */
-header {
-    background-color: #005f73; /* Deep teal for better contrast and elegance */
-    color: #fff; /* White text for visibility */
+header, footer {
+    background-color: #003f5c; /* Unified deep teal for both header and footer */
+    color: #fff; /* White text for clear readability */
     padding: 10px 20px;
-}
-
-footer {
-    background-color: #003f5c; /* Darker shade of teal for footer */
-    color: #fff; /* White text */
-    padding: 10px 20px;
-    text-align: center;
 }
 
 header nav a, footer a {
-    color: #fff; /* White text for links */
+    color: #e0e0e0; /* Light grey for links to contrast with dark background */
     text-decoration: none;
     margin: 0 10px;
 }
 
 header nav a:hover, footer a:hover {
     text-decoration: underline;
+    color: #ffffff; /* Pure white on hover for emphasis */
 }
 
 /* Main Content Styling */
@@ -51,7 +45,7 @@ article {
 }
 
 article h3 {
-    color: #005f73; /* Match header teal for headings inside articles */
+    color: #003f5c; /* Match header/footer colour for a cohesive look */
 }
 
 /* Header Logo and Navigation Styling */
@@ -62,9 +56,10 @@ header img {
 header nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #fff; /* White text for navigation links */
+    color: #e0e0e0; /* Light grey links for readability */
 }
 
 header nav a:hover {
     text-decoration: underline;
+    color: #ffffff; /* White text for hover effect */
 }
