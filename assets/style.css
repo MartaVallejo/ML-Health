@@ -382,3 +382,58 @@ nav a:hover {
     color: #e0d6b9; /* Light cream on hover */
     text-decoration: underline;
 }
+
+/* Academic Members Section */
+#academic-members {
+    padding: 20px;
+    background-color: #f9f7f3; /* Matches the cream theme */
+    color: #333333; /* Dark gray text */
+}
+
+#academic-members h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Individual Member Styling */
+.academic-member {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background: #ffffff; /* White background for individual profiles */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.profile-photo {
+    flex: 0 0 100px; /* Fixed size for profile photos */
+    border-radius: 50%; /* Circular photos */
+    margin-right: 15px; /* Space between photo and text */
+}
+
+.member-info {
+    flex: 1; /* Allow text content to take up remaining space */
+}
+
+.member-info h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333333; /* Dark gray for names */
+}
+
+.member-info p {
+    margin: 0 0 10px; /* Space between description and links */
+    color: #555555; /* Slightly lighter gray for descriptions */
+}
+
+.member-info a {
+    color: #1a73e8; /* Blue for links */
+    text-decoration: none;
+}
+
+.member-info a:hover {
+    text-decoration: underline;
+}
+
