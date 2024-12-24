@@ -78,8 +78,18 @@ main {
     padding: 20px;
 }
 
-h1, h2 {
-    color: #333333; /* Dark gray headings */
+/* General Title Styling for Main Content */
+main h1, main h2, #collaborators h2, #academic-members h2 {
+    color: #333333; /* Dark gray headings for main sections */
+}
+
+/* Header Title Styling */
+header h1 {
+    color: #f9f7f3; /* Cream text for contrast */
+    font-size: 2.5rem; /* Slightly larger for header titles */
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
 }
 
 article {
