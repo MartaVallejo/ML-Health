@@ -4,91 +4,54 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Light grey for page background */
-    color: #333; /* Dark grey for text */
+    background-color: #333333; /* Charcoal Grey */
+    color: #e0e0e0; /* Light Grey Text */
 }
 
-/* Header Styling */
-header {
-    background-color: #005f73; /* Lighter teal for the title section */
-    color: #fff;
-    padding: 20px 20px 0; /* Padding with no bottom padding for seamless menu placement */
+/* Header and Footer Styling */
+header, footer {
+    background-color: #1c1c1c; /* Very Dark Grey */
+    color: #d4af37; /* Gold */
+    padding: 20px;
+    text-align: center;
 }
 
-header h1 {
+header h1, footer p {
     margin: 0;
-    font-size: 2rem; /* Adjusted for a strong title presence */
-    text-align: center;
+    color: #f4e3cf; /* Cream for titles */
 }
 
-header div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header img {
-    height: 50px; /* Standard logo height */
-    vertical-align: middle;
-}
-
-/* Navigation Menu Styling */
-header nav {
-    background-color: #003f5c; /* Darker teal for menu */
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 10px; /* Ensure proper spacing below the header section */
-}
-
-header nav a {
-    color: #e0e0e0; /* Light grey links for readability */
+header nav a, footer a {
+    color: #f4e3cf; /* Cream */
     text-decoration: none;
-    margin: 0 15px; /* Slightly increased margin for better spacing */
-    font-size: 1rem;
+    margin: 0 10px;
 }
 
-header nav a:hover {
-    color: #ffffff; /* White on hover for emphasis */
+header nav a:hover, footer a:hover {
+    color: #d4af37; /* Gold on hover */
     text-decoration: underline;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #003f5c; /* Match footer with menu colour */
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-footer a {
-    color: #e0e0e0;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: #ffffff;
 }
 
 /* Main Content Styling */
 main {
     padding: 20px;
+    background-color: #333333; /* Charcoal Grey */
 }
 
 h1, h2 {
-    color: #444; /* Dark grey for headings */
+    color: #f4e3cf; /* Cream for headings */
 }
 
 article {
-    background: #fff; /* White background for articles */
-    border: 1px solid #ddd; /* Light grey border */
+    background: #1c1c1c; /* Very Dark Grey */
+    border: 1px solid #d4af37; /* Gold border */
     border-radius: 5px;
     margin: 15px 0;
     padding: 15px;
 }
 
 article h3 {
-    color: #005f73; /* Match lighter teal for article headings */
+    color: #d4af37; /* Gold for article headings */
 }
 
 /* Quick Links Section Styling */
@@ -101,34 +64,25 @@ section#links ul li {
     margin: 5px 0;
 }
 
-/* About Section Styling */
-section#about p {
-    margin: 15px 0;
+section#links ul li a {
+    color: #f4e3cf; /* Cream links */
 }
 
-/* Alignment for Title and Logos */
-header #welcome-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #005f73; /* Match title section background */
-    padding: 20px;
+section#links ul li a:hover {
+    color: #d4af37; /* Gold on hover */
 }
 
-header #welcome-section h1 {
-    margin: 0 auto;
-    text-align: center;
-    flex-grow: 1;
-    font-size: 2rem;
+/* Buttons and Highlights */
+button {
+    background-color: #d4af37; /* Gold */
+    color: #1c1c1c; /* Dark Grey Text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-header #welcome-section img {
-    height: 50px;
-    vertical-align: middle;
-}
-
-/* Improved Readability for Navigation Links */
-header nav {
-    text-align: center;
-    margin-top: 10px;
+button:hover {
+    background-color: #f4e3cf; /* Cream on hover */
+    color: #1c1c1c; /* Dark Grey */
 }
