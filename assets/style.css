@@ -4,54 +4,94 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #333333; /* Charcoal Grey */
-    color: #e0e0e0; /* Light Grey Text */
+    background-color: #f9f7f3; /* Cream background */
+    color: #333333; /* Dark gray text */
 }
 
-/* Header and Footer Styling */
-header, footer {
-    background-color: #1c1c1c; /* Very Dark Grey */
-    color: #d4af37; /* Gold */
-    padding: 20px;
-    text-align: center;
+/* Header Styling */
+header {
+    background-color: #333333; /* Dark gray for header background */
+    color: #f9f7f3; /* Cream text */
 }
 
-header h1, footer p {
+header h1 {
     margin: 0;
-    color: #f4e3cf; /* Cream for titles */
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    color: #f9f7f3; /* Cream text for the title */
 }
 
-header nav a, footer a {
-    color: #f4e3cf; /* Cream */
+header #welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header #welcome-section img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+header nav {
+    background-color: #4f4f4f; /* Slightly lighter gray for menu background */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+header nav a {
+    color: #f9f7f3; /* Cream links for readability */
     text-decoration: none;
-    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
 }
 
-header nav a:hover, footer a:hover {
-    color: #d4af37; /* Gold on hover */
+header nav a:hover {
+    color: #e0d6b9; /* Soft cream hover effect */
     text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333333; /* Match footer with header */
+    color: #f9f7f3; /* Cream text */
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #e0d6b9; /* Soft cream links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #f9f7f3;
 }
 
 /* Main Content Styling */
 main {
     padding: 20px;
-    background-color: #333333; /* Charcoal Grey */
 }
 
 h1, h2 {
-    color: #f4e3cf; /* Cream for headings */
+    color: #333333; /* Dark gray headings */
 }
 
 article {
-    background: #1c1c1c; /* Very Dark Grey */
-    border: 1px solid #d4af37; /* Gold border */
+    background: #ffffff; /* White background for articles */
+    border: 1px solid #ddd; /* Light gray border */
     border-radius: 5px;
     margin: 15px 0;
     padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 article h3 {
-    color: #d4af37; /* Gold for article headings */
+    color: #333333; /* Match dark gray for article headings */
 }
 
 /* Quick Links Section Styling */
@@ -64,25 +104,23 @@ section#links ul li {
     margin: 5px 0;
 }
 
-section#links ul li a {
-    color: #f4e3cf; /* Cream links */
+/* About Section Styling */
+section#about p {
+    margin: 15px 0;
 }
 
-section#links ul li a:hover {
-    color: #d4af37; /* Gold on hover */
-}
-
-/* Buttons and Highlights */
+/* Buttons */
 button {
-    background-color: #d4af37; /* Gold */
-    color: #1c1c1c; /* Dark Grey Text */
+    background-color: #333333; /* Dark gray button background */
+    color: #f9f7f3; /* Cream text */
     border: none;
-    padding: 10px 15px;
     border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #f4e3cf; /* Cream on hover */
-    color: #1c1c1c; /* Dark Grey */
+    background-color: #4f4f4f; /* Slightly lighter gray on hover */
 }
