@@ -125,3 +125,67 @@ button {
 button:hover {
     background-color: #4f4f4f; /* Slightly lighter gray on hover */
 }
+
+/* Publications Section */
+#publications {
+    padding: 20px;
+    background-color: #f9f7f3; /* Matches the cream background of the site */
+    color: #333333; /* Dark gray text for readability */
+}
+
+#publications h2 {
+    text-align: center;
+    color: #333333;
+}
+
+.publication-year {
+    margin-bottom: 30px; /* Add spacing between each year group */
+}
+
+.publication-year h3 {
+    color: #4f4f4f; /* Slightly lighter gray for year headings */
+    border-bottom: 1px solid #ddd; /* Adds a bottom border for distinction */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.publication-year ul {
+    list-style-type: none; /* Removes bullets for cleaner layout */
+    padding: 0; /* Removes default padding */
+}
+
+.publication-year li {
+    margin-bottom: 15px; /* Spacing between individual publications */
+}
+
+.publication-year li strong {
+    display: block; /* Ensures the title is on its own line */
+    color: #333333; /* Dark gray for publication titles */
+}
+
+.publication-year li em {
+    display: block; /* Ensures authors are on their own line */
+    color: #666666; /* Lighter gray for author names */
+    margin-bottom: 5px;
+}
+
+.publication-year li a {
+    color: #1a73e8; /* Blue color for publication links */
+    text-decoration: none;
+    font-style: italic; /* Matches scholarly style */
+}
+
+.publication-year li a:hover {
+    text-decoration: underline; /* Adds an underline on hover */
+}
+
+/* Optional: Style for Footer Links */
+footer a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
