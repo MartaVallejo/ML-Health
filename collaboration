@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaboration - ML-Health Research Group</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <!-- Title and Logos -->
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
+            <!-- Left: ML-Health Group Logo -->
+            <div>
+                <a href="index.html">
+                    <img src="images/ml-health-logo.png" alt="ML-Health Logo" style="height: 60px;">
+                </a>
+            </div>
+
+            <!-- Center: Page Title -->
+            <h1 style="flex-grow: 1; text-align: center; margin: 0; font-size: 2rem;">Collaboration</h1>
+
+            <!-- Right: Heriot-Watt University Logo -->
+            <div>
+                <a href="https://www.hw.ac.uk/" target="_blank">
+                    <img src="images/heriot-watt-logo.png" alt="Heriot-Watt University Logo" style="height: 60px;">
+                </a>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav style="text-align: center; background-color: #4f4f4f; color: #f9f7f3; padding: 10px 0;">
+            <a href="index.html" style="color: #f9f7f3; text-decoration: none; margin: 0 15px;">Home</a> |
+            <a href="projects.html" style="color: #f9f7f3; text-decoration: none; margin: 0 15px;">Projects</a> |
+            <a href="team.html" style="color: #f9f7f3; text-decoration: none; margin: 0 15px;">Team</a> |
+            <a href="students.html" style="color: #f9f7f3; text-decoration: none; margin: 0 15px;">Students</a> |
+            <a href="publications.html" style="color: #f9f7f3; text-decoration: none; margin: 0 15px;">Publications</a> |
+            <a href="collaboration.html" style="color: #f9f7f3; text-decoration: none; margin: 0 15px;">Collaboration</a> |
+            <a href="contact.html" style="color: #f9f7f3; text-decoration: none; margin: 0 15px;">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Placeholder Content -->
+        <p style="text-align: center; margin-top: 50px; color: #555;">Content coming soon...</p>
+    </main>
+
+    <footer>
+        <p style="text-align: center; padding: 10px 0; background-color: #4f4f4f; color: #f9f7f3;">
+            &copy; 2024 ML-Health Research Group | <a href="contact.html" style="color: #e0d6b9; text-decoration: none;">Contact Us</a>
+        </p>
+    </footer>
+</body>
+</html>
