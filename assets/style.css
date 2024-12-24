@@ -4,19 +4,26 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f9f9f9; /* Light grey for page background */
+    color: #333; /* Dark grey for text */
 }
 
-header, footer {
-    background: #333;
-    color: #fff;
+/* Header and Footer Styling */
+header {
+    background-color: #005f73; /* Deep teal for better contrast and elegance */
+    color: #fff; /* White text for visibility */
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: #003f5c; /* Darker shade of teal for footer */
+    color: #fff; /* White text */
     padding: 10px 20px;
     text-align: center;
 }
 
 header nav a, footer a {
-    color: #fff;
+    color: #fff; /* White text for links */
     text-decoration: none;
     margin: 0 10px;
 }
@@ -25,43 +32,39 @@ header nav a:hover, footer a:hover {
     text-decoration: underline;
 }
 
+/* Main Content Styling */
 main {
     padding: 20px;
 }
 
 h1, h2 {
-    color: #444;
+    color: #444; /* Dark grey for headings */
 }
 
+/* Article Styling */
 article {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #fff; /* White background for articles */
+    border: 1px solid #ddd; /* Light grey border */
     border-radius: 5px;
     margin: 15px 0;
     padding: 15px;
 }
 
-/* Header Styling */
-header {
-    background-color: #f4f4f4;
-    padding: 10px 20px;
+article h3 {
+    color: #005f73; /* Match header teal for headings inside articles */
+}
+
+/* Header Logo and Navigation Styling */
+header img {
+    vertical-align: middle;
 }
 
 header nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #333;
+    color: #fff; /* White text for navigation links */
 }
 
 header nav a:hover {
     text-decoration: underline;
-}
-
-header img {
-    vertical-align: middle;
-}
-
-
-article h3 {
-    color: #555;
 }
