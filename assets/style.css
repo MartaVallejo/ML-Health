@@ -338,26 +338,21 @@ nav a:hover {
     text-align: center;
 }
 
-/* Ensure logos stay aligned and properly sized */
-#projects-header .header-content .logo img {
-    height: 50px; /* Standardize logo height */
-    vertical-align: middle;
-}
-/* Header Styling for Team Page Only */
+/* Header Content for Team Page */
 #team-header .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Logos on either side, title in the center */
+    justify-content: space-between; /* Logos on opposite sides, title in the center */
     text-align: center;
     padding: 10px 0;
 }
 
 #team-header .header-content .logo {
-    flex: 0 0 auto; /* Logos stay fixed in size and position */
+    flex: 0 0 auto; /* Prevent logos from stretching */
 }
 
 #team-header .header-content h1 {
-    flex-grow: 1; /* Title takes up the space between the logos */
+    flex-grow: 1; /* Title occupies remaining space between logos */
     margin: 0;
     font-size: 2rem;
     text-align: center;
@@ -365,7 +360,7 @@ nav a:hover {
 
 /* Logo Styling */
 #team-header .header-content .logo img {
-    height: 50px; /* Standardize logo height */
+    height: 50px; /* Ensure consistent logo height */
     vertical-align: middle;
 }
 
@@ -387,4 +382,3 @@ nav a:hover {
     color: #e0d6b9; /* Light cream on hover */
     text-decoration: underline;
 }
-
