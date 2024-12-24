@@ -129,55 +129,74 @@ button:hover {
 /* Publications Section */
 #publications {
     padding: 20px;
-    background-color: #f9f7f3; /* Matches the cream background of the site */
-    color: #333333; /* Dark gray text for readability */
+    background-color: #f9f7f3; /* Cream background */
+    color: #333333; /* Dark gray text */
 }
 
 #publications h2 {
     text-align: center;
     color: #333333;
+    margin-bottom: 20px;
 }
 
 .publication-year {
-    margin-bottom: 30px; /* Add spacing between each year group */
+    margin-bottom: 20px; /* Slightly reduce spacing between year groups */
+    background-color: #ffffff; /* White background for year group sections */
+    border: 1px solid #ddd; /* Light gray border for separation */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for better structure */
 }
 
 .publication-year h3 {
-    color: #4f4f4f; /* Slightly lighter gray for year headings */
-    border-bottom: 1px solid #ddd; /* Adds a bottom border for distinction */
+    color: #333333; /* Dark gray for year headings */
+    border-bottom: 1px solid #ddd; /* Bottom border for distinction */
+    margin-bottom: 10px;
     padding-bottom: 5px;
-    margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 
 .publication-year ul {
-    list-style-type: none; /* Removes bullets for cleaner layout */
-    padding: 0; /* Removes default padding */
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+    margin: 0;
 }
 
 .publication-year li {
-    margin-bottom: 15px; /* Spacing between individual publications */
+    margin-bottom: 10px; /* Reduced spacing between publications */
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    gap: 10px;
 }
 
 .publication-year li strong {
-    display: block; /* Ensures the title is on its own line */
-    color: #333333; /* Dark gray for publication titles */
+    font-weight: bold;
+    color: #333333;
+    flex-basis: 100%; /* Title spans full width */
 }
 
 .publication-year li em {
-    display: block; /* Ensures authors are on their own line */
-    color: #666666; /* Lighter gray for author names */
-    margin-bottom: 5px;
+    font-style: italic;
+    color: #555555; /* Slightly lighter gray for author names */
 }
 
 .publication-year li a {
-    color: #1a73e8; /* Blue color for publication links */
+    color: #1a73e8; /* Blue for links */
     text-decoration: none;
-    font-style: italic; /* Matches scholarly style */
+    font-size: 0.9rem;
+    margin-left: auto; /* Push the link to the right */
 }
 
 .publication-year li a:hover {
-    text-decoration: underline; /* Adds an underline on hover */
+    text-decoration: underline; /* Adds underline on hover */
 }
+
+/* Optional: Style for Compact Links */
+.publication-year li a:before {
+    content: "⟶ "; /* Add an arrow icon before links */
+    color: #555555;
+}
+
 
 /* Optional: Style for Footer Links */
 footer a {
