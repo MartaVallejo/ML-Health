@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ML-Health Research Group</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+    <!-- Navigation Menu -->
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <!-- Left: ML-Health Group Logo -->
+        <div>
+            <a href="index.html">
+                <img src="images/ml-health-logo.png" alt="ML-Health Logo" style="height: 50px;">
+            </a>
+        </div>
+
+        <!-- Center: Navigation Menu -->
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="team.html">Team</a> |
+            <a href="students.html">Students</a> |
+            <a href="publications.html">Publications</a> |
+            <a href="collaboration.html">Collaboration</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Right: Heriot-Watt University Logo -->
+        <div>
+            <a href="https://www.hw.ac.uk/" target="_blank">
+                <img src="images/heriot-watt-logo.png" alt="Heriot-Watt University Logo" style="height: 50px;">
+            </a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <!-- General Contact Information -->
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:ml-health@hw.ac.uk">ml-health@hw.ac.uk</a></p>
+            <p><strong>Location:</strong> Heriot-Watt University, Edinburgh, EH14 4AS, United Kingdom</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 ML-Health Research Group | <a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>
