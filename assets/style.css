@@ -318,3 +318,47 @@ nav a:hover {
     background-color: #4f4f4f; /* Slightly lighter gray on hover */
 }
 
+/* Header Styling for Projects Page Only */
+#projects-header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logos on either side, title in the center */
+    text-align: center;
+    padding: 10px 0;
+}
+
+#projects-header .header-content .logo {
+    flex-basis: 15%; /* Allow logos to take up consistent space */
+}
+
+#projects-header .header-content h1 {
+    flex-grow: 1; /* Title occupies remaining space */
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#projects-header .header-content .logo img {
+    height: 50px; /* Standardize logo height */
+    vertical-align: middle;
+}
+
+/* Navigation Menu for Projects Page */
+#projects-header nav {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+#projects-header nav a {
+    color: #f9f7f3; /* Cream for navigation links */
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+#projects-header nav a:hover {
+    color: #e0d6b9; /* Light cream on hover */
+    text-decoration: underline;
+}
+
