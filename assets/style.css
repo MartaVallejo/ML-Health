@@ -29,8 +29,9 @@ header #welcome-section {
     padding: 20px;
 }
 
-header #welcome-section img {
-    height: 50px;
+#welcome-section img {
+    height: 80px; /* Increase the logo height */
+    max-width: 150px; /* Limit the maximum width for responsiveness */
     vertical-align: middle;
 }
 
