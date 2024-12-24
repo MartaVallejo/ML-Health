@@ -37,12 +37,13 @@ header nav {
     background-color: #003f5c; /* Darker teal for menu */
     text-align: center;
     padding: 10px 0;
+    margin-top: 10px; /* Ensure proper spacing below the header section */
 }
 
 header nav a {
     color: #e0e0e0; /* Light grey links for readability */
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px; /* Slightly increased margin for better spacing */
     font-size: 1rem;
 }
 
@@ -103,4 +104,31 @@ section#links ul li {
 /* About Section Styling */
 section#about p {
     margin: 15px 0;
+}
+
+/* Alignment for Title and Logos */
+header #welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #005f73; /* Match title section background */
+    padding: 20px;
+}
+
+header #welcome-section h1 {
+    margin: 0 auto;
+    text-align: center;
+    flex-grow: 1;
+    font-size: 2rem;
+}
+
+header #welcome-section img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+/* Improved Readability for Navigation Links */
+header nav {
+    text-align: center;
+    margin-top: 10px;
 }
