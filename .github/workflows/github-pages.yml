@@ -21,7 +21,7 @@ jobs:
           echo "<!DOCTYPE html><html><head><title>ML-Health</title></head><body><h1>Welcome to ML-Health</h1><p>Our research group focuses on machine learning for healthcare, specifically neurodegenerative diseases.</p></body></html>" > ./public/index.html
 
       - name: Deploy to GitHub Pages
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./public
 
