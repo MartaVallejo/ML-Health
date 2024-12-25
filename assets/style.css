@@ -78,10 +78,10 @@ main {
     padding: 20px;
 }
 
-/* /* General Title Styling for Main Content */
-main h1, main h2, #collaborators h2, #academic-members h2 {
+/* General Title Styling for Main Content */
+main h2, #collaborators h2, #academic-members h2 {
     color: #333333; /* Dark gray headings for main sections */
-} */
+}
 
 /* Header Title Styling */
 header h1 {
@@ -457,12 +457,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* /* Header Title and Logos */
+/* Header Title and Logos */
 header h1 {
     font-size: 2rem;
-    color: #333333; /* Dark gray */
     margin: 0;
-} */
+}
 
 header img {
     height: 60px;
