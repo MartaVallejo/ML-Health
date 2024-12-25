@@ -78,10 +78,10 @@ main {
     padding: 20px;
 }
 
-/* General Title Styling for Main Content */
+/* /* General Title Styling for Main Content */
 main h1, main h2, #collaborators h2, #academic-members h2 {
     color: #333333; /* Dark gray headings for main sections */
-}
+} */
 
 /* Header Title Styling */
 header h1 {
