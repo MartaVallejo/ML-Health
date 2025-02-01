@@ -43,74 +43,129 @@
     </nav>
 </header>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students - ML-Health Research Group</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
 
+<header>
+    <!-- Top Section: Title and Logos -->
+    <div id="welcome-section" style="padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+        <!-- Left: ML-Health Group Logo -->
+        <div>
+            <a href="index.html">
+                <img src="images/ml-health-logo.png" alt="ML-Health Logo" style="height: 50px;">
+            </a>
+        </div>
 
-    <main>
-        <h1>Our Students</h1>
-        <p>Below is a list of our current PhD students and their research topics, supervised by the group members and other academic collaborators.</p>
+        <!-- Center: Title -->
+        <div style="flex-grow: 1; text-align: center;">
+            <h1 style="margin: 0;">Our Students</h1>
+        </div>
 
-        <section>
-            <h2>Current Students</h2>
-            <ul>
-                <li>
-                    <strong>Ed Rees</strong> (2023-2027)  
-                    <p>Research: Mimicking the protective, tactile, and interface capabilities of human skin for soft robotics</p>
-                    <p>Supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/michael-crichton">Dr Michael Crichton</a>  
-                    Co-supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/marta-vallejo">Dr Marta Vallejo</a></p>
-                </li>
-                <li>
-                    <strong>Lubna Abu Zohair</strong> (2021-2026)  
-                    <p>Research: Huntington's disease progression and biomarkers using machine learning</p>
-                    <p>Supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/hind-zantout">Prof Hind Zantout</a>  
-                    Co-supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/marta-vallejo">Dr Marta Vallejo</a>  </p>
-                </li>
-                <li>
-                    <strong>Ciarán Johnson</strong> (2022-2026)  
-                    <p>Research: Prognosis in the Farming Process: A Full Characterisation and Phenotyping Approach</p>
-                    <p>Supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/alistair-mcconnell">Dr Alistair McConnell</a>  
-                    Co-supervisor: <a href="https://stevetonneau.fr/">Dr Steve Tonneau (UoE)</a> </p>
-                </li>
-                <li>
-                    <strong>Ross Davidson</strong> (2023-2027)  
-                    <p>Research: Accessibility in Robotics: Can improving accessibility for robots improve it for people?</p>
-                    <p>Supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/alistair-mcconnell">Dr Alistair McConnell</a>  
-                    Co-supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/ron-petrick">Prof Ron Petrick</a> </p>
-                </li>
-                <li>
-                    <strong>Ada Grecner</strong> (2024-2028)  
-                    <p>Research:  Adaptable low-power machine learning prosthetic interfaces for sEMG signal classification</p>
-                    <p>Supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/alistair-mcconnell">Dr Alistair McConnell</a>  
-                    Co-supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/marta-vallejo">Dr Marta Vallejo</a> </p>
-                </li>
-                <li>
-                    <strong>Eleanor Mawson</strong> (2021-2025)  
-                    <p>Research: Understanding the Impacts of Sea Level Rise on Coral Reef Hydrodynamic Processes: Exploring Spatial Scales and Feeding Behaviour</p>
-                    <p>Supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/michel-kaiser">Prof Michel Kaiser</a>  
-                    Co-supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/marta-vallejo">Dr Marta Vallejo</a> </p>
-                </li>
-            </ul>
-        </section>
+        <!-- Right: Heriot-Watt University Logo -->
+        <div>
+            <a href="https://www.hw.ac.uk/" target="_blank">
+                <img src="images/heriot-watt-logo.jpg" alt="Heriot-Watt University Logo" style="height: 50px;">
+            </a>
+        </div>
+    </div>
 
-        <section>
-            <h2>Alumni</h2>
-            <ul>
-                <li>
-                    <strong>Dorian Gouzou</strong> (2020-2024)  
-                    <p>Thesis: Deep learning for fluorescence lifetime and retinal imaging</p>
-                    <p>Supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/marta-vallejo">Dr Marta Vallejo</a>  
-                    Co-supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/yoann-altmann">Prof Yoann Altmann</a></p>
-                </li>
-                <li>
-                    <strong>Gordon Frost</strong> (2019-2022)  
-                    <p>Thesis: Actor-Critic Reinforcement Learning Algorithms for Control of an Autonomous Underwater Vehicle</p>
-                    <p>Supervisor: <a href="https://researchportal.hw.ac.uk/en/persons/marta-vallejo">Dr Marta Vallejo</a></p>
-                </li>
-            </ul>
-        </section>
-    </main>
+    <!-- Bottom Section: Navigation Menu -->
+    <div style="padding: 10px;">
+        <nav style="display: flex; justify-content: center; gap: 15px;">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Team</a>
+            <a href="students.html">Students</a>
+            <a href="publications.html">Publications</a>
+            <a href="collaboration.html">Collaboration</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
 
-    <footer>
-        <p>&copy; 2024 ML-Health Research Group | <a href="contact.html">Contact Us</a></p>
-    </footer>
+<main>
+    <section id="students">
+        <h2>Current Students</h2>
+
+        <div class="member-box">
+            <img src="images/SophiaGonzalez.jpg" alt="Sophia Otálora González" class="profile-photo">
+            <div class="member-details">
+                <h3>Sophia Otálora González</h3>
+                <p>Investigating multimodal biomarkers for Parkinson's disease using deep learning.</p>
+                <p><strong>Supervisors:</strong> Dr Marta Vallejo, Prof. X</p>
+                <p><a href="https://researchportal.hw.ac.uk/en/persons/sophia-otalora-gonzalez" target="_blank">Research Profile</a></p>
+            </div>
+        </div>
+
+        <div class="member-box">
+            <img src="images/EdRees.jpg" alt="Ed Rees" class="profile-photo">
+            <div class="member-details">
+                <h3>Ed Rees</h3>
+                <p>Exploring machine learning for cardiovascular health.</p>
+                <p><strong>Supervisors:</strong> Dr Marta Vallejo, Dr Y</p>
+                <p><a href="https://researchportal.hw.ac.uk/en/persons/ed-rees" target="_blank">Research Profile</a></p>
+            </div>
+        </div>
+
+        <div class="member-box">
+            <img src="images/LubnaAbuZohair.jpg" alt="Lubna Abu Zohair" class="profile-photo">
+            <div class="member-details">
+                <h3>Lubna Abu Zohair</h3>
+                <p>Part-time PhD on neurodegenerative disease progression.</p>
+                <p><strong>Supervisors:</strong> Dr Marta Vallejo, Prof Z</p>
+                <p><a href="https://researchportal.hw.ac.uk/en/persons/lubna-abu-zohair" target="_blank">Research Profile</a></p>
+            </div>
+        </div>
+
+        <div class="member-box">
+            <img src="images/Eleanor.jpg" alt="Eleanor" class="profile-photo">
+            <div class="member-details">
+                <h3>Eleanor</h3>
+                <p>Developing models for sensor data in rehabilitation.</p>
+                <p><strong>Supervisors:</strong> Dr Marta Vallejo, Dr W</p>
+                <p><a href="https://researchportal.hw.ac.uk/en/persons/eleanor" target="_blank">Research Profile</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="alumni">
+        <h2>Alumni</h2>
+
+        <div class="member-box">
+            <img src="images/DorianGouzou.jpg" alt="Dorian Gouzou" class="profile-photo">
+            <div class="member-details">
+                <h3>Dorian Gouzou</h3>
+                <p>Thesis on deep learning for fluorescence lifetime and retinal imaging.</p>
+                <p><strong>Completed:</strong> 2024</p>
+                <p><a href="https://researchportal.hw.ac.uk/en/persons/dorian-gouzou" target="_blank">Research Profile</a></p>
+            </div>
+        </div>
+
+        <div class="member-box">
+            <img src="images/GordonFrost.jpg" alt="Gordon Frost" class="profile-photo">
+            <div class="member-details">
+                <h3>Gordon Frost</h3>
+                <p>Applied transfer learning for early-stage dementia diagnosis.</p>
+                <p><strong>Completed:</strong> 2022</p>
+                <p><a href="https://researchportal.hw.ac.uk/en/persons/gordon-frost" target="_blank">Research Profile</a></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 ML-Health Research Group | <a href="contact.html">Contact Us</a></p>
+</footer>
+
+</body>
+</html>
+
 </body>
 </html>
