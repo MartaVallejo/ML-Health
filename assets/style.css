@@ -443,6 +443,8 @@ nav a:hover {
 }
 
 .member-details h3 {
+    display: inline; /* Ensures the name and dates appear on the same line */
+    margin-right: 10px; /* Adjust spacing */
     margin: 0;
     font-size: 1.5rem;
     color: #333333; /* Dark gray for names */
@@ -460,6 +462,12 @@ nav a:hover {
 
 .member-details a:hover {
     text-decoration: underline;
+}
+
+.member-details span {
+    display: inline; /* Ensures dates stay on the same line */
+    font-size: 1rem;
+    color: #666; /* Adjust text color */
 }
 
 /* Header Title and Logos */
