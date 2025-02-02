@@ -469,6 +469,15 @@ nav a:hover {
     font-size: 1rem;
     color: #666; /* Adjust text color */
 }
+.member-details h3 {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing */
+}
+
+.member-details span {
+    font-size: 1rem;
+    color: #666; /* Adjust text color */
+}
 
 /* Header Title and Logos */
 header h1 {
@@ -480,6 +489,34 @@ header img {
     height: 60px;
     vertical-align: middle;
 }
+
+.academic-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.academic-column {
+    width: 48%; /* Ensures both columns take equal space */
+}
+
+.academic-column h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .academic-columns {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+
+    .academic-column {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
 
 /* Navigation Menu */
 nav {
@@ -602,15 +639,5 @@ nav a:hover {
 
 .collaborator-details a:hover {
     text-decoration: underline;
-}
-
-.member-details h3 {
-    display: inline-block;
-    margin-right: 10px; /* Adjust spacing */
-}
-
-.member-details span {
-    font-size: 1rem;
-    color: #666; /* Adjust text color */
 }
 
