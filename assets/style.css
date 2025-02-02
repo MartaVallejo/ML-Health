@@ -500,7 +500,7 @@ header img {
 }
 
 .academic-column {
-    width: 45%; /* Each column takes half of the space */
+    width: 46%; /* Each column takes half of the space */
     background-color: #ffffff; /* Adds distinction between columns */
     padding: 15px;
     border-radius: 8px;
