@@ -595,3 +595,14 @@ nav a:hover {
 .collaborator-details a:hover {
     text-decoration: underline;
 }
+
+.member-details h3 {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing */
+}
+
+.member-details span {
+    font-size: 1rem;
+    color: #666; /* Adjust text color */
+}
+
