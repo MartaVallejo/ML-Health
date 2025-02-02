@@ -491,21 +491,22 @@ header img {
 }
 
 /* Academic Members Section */
+/* Academic Members Section */
 .academic-columns {
     display: flex;
-    flex-wrap: wrap; /* Ensures proper wrapping for smaller screens */
-    justify-content: space-between;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    justify-content: space-between; /* Distributes space evenly */
     gap: 20px;
     align-items: flex-start; /* Aligns content at the top */
 }
 
+/* Each column takes up half the width */
 .academic-column {
-    width: 48%; /* Each column takes half of the space */
-    background-color: #ffffff; /* Adds distinction between columns */
+    width: 48%; /* Ensures two equal columns */
+    background-color: #ffffff; /* Distinct background */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    min-height: 100%; /* Makes sure both columns are equal in height */
 }
 
 /* Align column titles */
@@ -555,7 +556,6 @@ header img {
         width: 100%; /* Full width for smaller screens */
     }
 }
-
 
 /* Navigation Menu */
 nav {
