@@ -497,7 +497,6 @@ header img {
     justify-content: space-between;
     gap: 20px;
     align-items: flex-start; /* Aligns content at the top */
-    border: 2px solid red; /* Check if the container is the correct size */
 }
 
 .academic-column {
@@ -507,7 +506,6 @@ header img {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     min-height: 100%; /* Makes sure both columns are equal in height */
-    border: 2px solid blue; /* Check if both columns are appearing */
 }
 
 /* Align column titles */
