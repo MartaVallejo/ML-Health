@@ -549,6 +549,7 @@ header img {
 }
 
 /* Responsive Design */
+/*
 @media (max-width: 700px) {
     .academic-columns {
         flex-direction: column; /* Stack columns on smaller screens */
@@ -559,6 +560,7 @@ header img {
         width: 100%; /* Make full-width for smaller screens */
     }
 }
+*/
 
 
 /* Navigation Menu */
