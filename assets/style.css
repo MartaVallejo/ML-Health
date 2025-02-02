@@ -491,22 +491,21 @@ header img {
 }
 
 /* Academic Members Section */
-/* Academic Members Section */
 .academic-columns {
     display: flex;
-    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
-    justify-content: space-between; /* Distributes space evenly */
+    flex-wrap: wrap; /* Ensures proper wrapping for smaller screens */
+    justify-content: space-between;
     gap: 20px;
     align-items: flex-start; /* Aligns content at the top */
 }
 
-/* Each column takes up half the width */
 .academic-column {
-    width: 48%; /* Ensures two equal columns */
-    background-color: #ffffff; /* Distinct background */
+    width: 48%; /* Each column takes half of the space */
+    background-color: #ffffff; /* Adds distinction between columns */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 100%; /* Makes sure both columns are equal in height */
 }
 
 /* Align column titles */
@@ -520,7 +519,7 @@ header img {
     border-radius: 5px;
 }
 
-/* Member Box */
+/* Adjust styling for the member boxes */
 .member-box {
     display: flex;
     align-items: center;
@@ -540,8 +539,9 @@ header img {
 
 /* Profile Photo */
 .profile-photo {
-    flex: 0 0 100px;
-    height: 100px;
+    min-width: 100px;
+    max-width: 120px;
+    height: auto;
     border-radius: 50%;
     margin-right: 15px;
 }
@@ -549,13 +549,15 @@ header img {
 /* Responsive Design */
 @media (max-width: 768px) {
     .academic-columns {
-        flex-direction: column; /* Stacks into one column on smaller screens */
+        flex-direction: column; /* Stack columns on smaller screens */
+        gap: 10px;
     }
 
     .academic-column {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%; /* Make full-width for smaller screens */
     }
 }
+
 
 /* Navigation Menu */
 nav {
