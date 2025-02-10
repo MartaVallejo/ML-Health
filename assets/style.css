@@ -583,12 +583,12 @@ nav a:hover {
 .collaborator-box {
     display: flex;
     align-items: center;
-    background: #ffffff; /* White background */
+    background: #ffffff; /* White background for consistency */
     border: 1px solid #ddd; /* Light gray border */
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px; /* Rounded corners for a smoother look */
     padding: 15px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -596,5 +596,7 @@ nav a:hover {
     transform: scale(1.02); /* Slight zoom effect on hover */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow */
 }
+
+
 
 
