@@ -464,10 +464,10 @@ nav a:hover {
     margin-right: 10px; /* Adjust spacing */
 }
 
-.member-details span {
+/* .member-details span { */
     font-size: 1rem;
     color: #666; /* Adjust text color */
-}
+} */
 
 /* Header Title and Logos */
 header h1 {
@@ -517,21 +517,6 @@ header img {
     border-radius: 50%;
     margin-right: 15px;
 }
-
-/* Responsive Design */
-/*
-@media (max-width: 700px) {
-    .academic-columns {
-        flex-direction: column; /* Stack columns on smaller screens */
-        gap: 10px;
-    }
-
-    .academic-column {
-        width: 100%; /* Make full-width for smaller screens */
-    }
-}
-*/
-
 
 /* Navigation Menu */
 nav {
@@ -586,3 +571,9 @@ nav a:hover {
     color: #555555; /* Slightly lighter gray for descriptions */
 }
 
+.collaborator-box .profile-photo {
+    flex: 0 0 100px; /* Fixed size */
+    height: 100px; /* Ensure square dimensions */
+    border-radius: 50%; /* Circular profile images */
+    margin-right: 15px; /* Space between image and text */
+}
