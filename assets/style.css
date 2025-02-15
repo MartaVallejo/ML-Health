@@ -497,23 +497,15 @@ header img {
 }
 
 /* Profile Photo */
-/*
 .profile-photo {
+    /* flex: 0 0 100px; /* For fix size */
+    /* height: 100px /* For fix size */
     min-width: 100px;
     max-width: 120px;
     height: auto;
     border-radius: 50%;
     margin-right: 15px;
-} */
-
-
-/* Profile Photo Styling */
-.profile-photo {
-    flex: 0 0 100px; /* Fixed size for profile photos */
-    height: 100px; /* Ensure square dimensions */
-    border-radius: 50%; /* Circular photos */
-    margin-right: 15px; /* Spacing between photo and text */
-} 
+}
 
 /* Navigation Menu */
 nav {
@@ -570,12 +562,13 @@ nav a:hover {
     color: #555555; /* Slightly lighter gray for descriptions */
 }
 
+/*
 .collaborator-box .profile-photo {
-    flex: 0 0 100px; /* Fixed size */
-    height: 100px; /* Ensure square dimensions */
-    border-radius: 50%; /* Circular profile images */
-    margin-right: 15px; /* Space between image and text */
-}
+    flex: 0 0 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    margin-right: 15px; 
+} */
 
 .collaborator-details a { /* NEW */
     color: #1a73e8; /* Blue for links */
