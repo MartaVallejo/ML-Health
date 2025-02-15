@@ -424,13 +424,27 @@ nav a:hover {
     flex: 1; /* Allow details to take up remaining space */
 }
 
+/*
 .member-details h3 {
-    display: inline; /* Ensures the name and dates appear on the same line */
-    margin-right: 10px; /* Adjust spacing */
+    display: inline;
+    margin-right: 10px; 
     margin: 0;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.member-details h3 {
+    display: inline-block;
+    margin-right: 10px; 
+} */
+
+.member-details h3 {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing */
     font-size: 1.5rem;
     color: #333333; /* Dark gray for names */
 }
+
 
 .member-details p {
     margin: 5px 0;
@@ -450,10 +464,6 @@ nav a:hover {
     display: inline; /* Ensures dates stay on the same line */
     font-size: 1rem;
     color: #666; /* Adjust text color */
-}
-.member-details h3 {
-    display: inline-block;
-    margin-right: 10px; /* Adjust spacing */
 }
 
 /* Header Title and Logos */
