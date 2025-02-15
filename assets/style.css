@@ -464,11 +464,6 @@ nav a:hover {
     margin-right: 10px; /* Adjust spacing */
 }
 
-/* .member-details span { */
-    font-size: 1rem;
-    color: #666; /* Adjust text color */
-} */
-
 /* Header Title and Logos */
 header h1 {
     font-size: 2rem;
@@ -561,6 +556,8 @@ nav a:hover {
 }
 
 .collaborator-details h3 {
+    display: inline; /* Ensures the name and dates appear on the same line -NEW */
+    margin-right: 10px; /* Adjust spacing - NEW*/
     margin: 0;
     font-size: 1.5rem;
     color: #333333; /* Dark gray for names */
@@ -577,3 +574,22 @@ nav a:hover {
     border-radius: 50%; /* Circular profile images */
     margin-right: 15px; /* Space between image and text */
 }
+
+.collaborator-details a { /* NEW */
+    color: #1a73e8; /* Blue for links */
+    text-decoration: none;
+}
+
+.collaborator-details a:hover {
+    text-decoration: underline;
+}
+
+.collaborator-details span {
+    display: inline; /* Ensures dates stay on the same line */
+    font-size: 1rem;
+    color: #666; /* Adjust text color */
+}
+/* .member-details h3 {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing */
+} */
