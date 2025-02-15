@@ -78,6 +78,16 @@ footer a:hover {
     color: #f9f7f3;
 }
 
+/* Optional: Style for Footer Links */
+/* footer a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+} */
+
 /* Main Content Styling */
 main {
     padding: 20px;
@@ -210,17 +220,6 @@ button:hover {
 .publication-year li a:before {
     content: "⟶ "; /* Add an arrow icon before links */
     color: #555555;
-}
-
-
-/* Optional: Style for Footer Links */
-footer a {
-    color: #1a73e8;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
 
 /* Navigation Menu Styling */
