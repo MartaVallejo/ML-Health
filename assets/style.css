@@ -112,9 +112,15 @@ article h3 {
 }
 
 /* Quick Links Section Styling */
+section#links {
+    margin-top: 40px; /* Adds space above the section */
+    padding: 20px 0; /* Adds some internal spacing */
+}
+
 section#links ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; /* Ensures no extra margin within the list */
 }
 
 section#links ul li {
@@ -122,9 +128,19 @@ section#links ul li {
 }
 
 /* About Section Styling */
+section#about {
+    margin-bottom: 40px; /* Ensures space below About section */
+}
+
 section#about p {
     margin: 15px 0;
 }
+
+/* General Section Spacing */
+section {
+    margin-bottom: 40px; /* Adds consistent spacing between sections */
+}
+
 
 /* Buttons */
 button {
