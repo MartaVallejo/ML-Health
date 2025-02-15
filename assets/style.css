@@ -69,7 +69,8 @@ footer {
 }
 
 footer a {
-    color: #e0d6b9; /* Soft cream links */
+    /*color: #e0d6b9; /* Soft cream links */
+    color: #1a73e8;
     text-decoration: none;
 }
 
