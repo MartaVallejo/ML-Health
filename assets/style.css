@@ -505,13 +505,14 @@ header img {
     margin-right: 15px;
 }
 
-/*
+
 /* Profile Photo Styling */
+/*
 .profile-photo {
-    flex: 0 0 100px; /* Fixed size for profile photos */
-    height: 100px; /* Ensure square dimensions */
-    border-radius: 50%; /* Circular photos */
-    margin-right: 15px; /* Spacing between photo and text */
+ /*   flex: 0 0 100px; /* Fixed size for profile photos */
+ /*   height: 100px; /* Ensure square dimensions */
+/*    border-radius: 50%; /* Circular photos */
+/*    margin-right: 15px; /* Spacing between photo and text */
 } */
 
 /* Navigation Menu */
