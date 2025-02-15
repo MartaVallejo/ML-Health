@@ -588,13 +588,14 @@ nav a:hover {
 }
 
 /* News-main Section */
+/*
 .news-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
+} 
 
-/* Individual news item styling */
+
 .news-item {
     background: #fff;
     border: 1px solid #ddd;
@@ -603,12 +604,62 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: calc(50% - 20px); /* Two columns on large screens */
     max-width: 500px; /* Ensures readability */
-}
+} 
 
-/* Responsive: Stack news items in a single column on small screens */
 @media (max-width: 768px) {
     .news-item {
         width: 100%;
+    }
+} */
+
+/* News Section Styling */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual news item styling */
+.news-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    gap: 20px;
+}
+
+.news-text {
+    flex: 1; /* Ensures text takes available space */
+}
+
+.news-image {
+    flex: 0 0 200px; /* Fixed width for images */
+}
+
+.news-image img {
+    width: 100%; /* Makes sure the image fills its container */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column; /* Stack text and image on smaller screens */
+    }
+
+    .news-image {
+        flex: 0 0 auto; /* Allow natural size */
+        width: 100%;
+        text-align: center;
+    }
+
+    .news-image img {
+        width: 80%; /* Reduce image size on small screens */
     }
 }
 
