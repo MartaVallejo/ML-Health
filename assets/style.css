@@ -111,6 +111,15 @@ article h3 {
     color: #333333; /* Match dark gray for article headings */
 }
 
+/* Section Titles - General Styling */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
 /* Quick Links Section Styling */
 section#links {
     margin-top: 40px; /* Adds space above the section */
