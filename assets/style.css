@@ -628,19 +628,6 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/* Image Styling */
-/* Ensure images don't take full width */
-.news-image {
-    flex: 1;
-    max-width: 200px;
-    text-align: center;
-}
-
-.news-image img {
-    width: 100%;
-    border-radius: 8px;
-}
-
 .news-item h3 {
     text-align: center;
     font-size: 1.5rem;
@@ -681,22 +668,35 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* News-Image Slyle*/
+.news-image {
+    flex: 0 0 200px; /* Fixed width instead of flex: 1 */
+    max-width: 200px;
+    text-align: center;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
 @media (max-width: 768px) {
     .news-item {
         flex-direction: column; /* Stack text and image on smaller screens */
     }
 
     .news-image {
-        flex: 0 0 auto; /* Allow natural size */
-        width: 100%;
-        text-align: center;
+        flex: unset; /* Reset flex property */
+        max-width: 80%; /* Make the image smaller but not full-width */
+        margin: 0 auto; /* Center the image */
     }
 
     .news-image img {
-        width: 80%; /* Reduce image size on small screens */
+        width: 100%; /* Let it take the full width of its container */
     }
 }
+
 
 /* Section styling - used for About, News, etc. */
 .section-box {
