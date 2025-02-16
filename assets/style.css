@@ -607,16 +607,10 @@ nav a:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/*
-.news-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-} */
-
 /* Individual news item styling */
 .news-item {
     display: flex;
+    flex-direction: column; /* Ensures stacking of h3, content, and link */
     align-items: center;
     background: #fff;
     border: 1px solid #ddd;
@@ -627,27 +621,31 @@ nav a:hover {
     gap: 20px;
 }
 
-/* Text Styling */
+/* Make text and image take equal space */
 .news-text {
-    flex: 1; /* Ensures text takes available space */
+    flex: 1;
+    text-align: justify;
+    line-height: 1.6;
 }
 
 /* Image Styling */
+/* Ensure images don't take full width */
 .news-image {
-    flex: 0 0 200px; /* Fixed width for images */
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
 }
 
 .news-image img {
-    width: 100%; /* Makes sure the image fills its container */
-    height: auto;
+    width: 100%;
     border-radius: 8px;
 }
 
 .news-item h3 {
-    display: block;
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* News Title */
@@ -657,6 +655,30 @@ nav a:hover {
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
+}
+
+.news-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Ensure the link appears in its own row */
+.news-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.news-link a {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.news-link a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */
