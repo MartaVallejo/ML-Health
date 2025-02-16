@@ -602,7 +602,7 @@ nav a:hover {
     flex-direction: column;
     gap: 20px;
     padding: 40px;
-    background-color: #f9f7f3; /* Match with the 'About' section */
+    background-color: #f9f7f3; /* Match 'About' section */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -610,8 +610,9 @@ nav a:hover {
 /* Individual news item styling */
 .news-item {
     display: flex;
-    flex-direction: column; /* Ensures stacking of h3, content, and link */
+    flex-direction: row; /* Change to row for side-by-side layout */
     align-items: center;
+    justify-content: space-between; /* Ensures even spacing */
     background: #fff;
     border: 1px solid #ddd;
     padding: 20px;
@@ -626,6 +627,7 @@ nav a:hover {
     flex: 1;
     text-align: justify;
     line-height: 1.6;
+    padding-right: 20px; /* Add space between text and image */
 }
 
 .news-item h3 {
@@ -670,16 +672,16 @@ nav a:hover {
 
 /* Default news image styling (for the news page) */
 .news-image {
-    flex: 0 0 200px; /* Keep a reasonable size for columns */
-    max-width: 200px;
+    flex: 0 1 250px; /* Increase image size */
+    max-width: 250px;
     text-align: center;
 }
 
 .news-image img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Ensures image scales within container */
     border-radius: 8px;
 }
+
 
 /* Special styling for the main page */
 #latest-news .news-image {
@@ -708,18 +710,21 @@ nav a:hover {
     }
 }
 */
-/* Responsive adjustments */
+/* Adjust for Mobile Screens */
 @media (max-width: 768px) {
-    .news-image {
-        max-width: 90%; /* Ensures images are larger but not too dominant */
-        margin: 0 auto;
+    .news-item {
+        flex-direction: column; /* Stack image and text on small screens */
+        align-items: center;
     }
 
-    .news-image img {
-        width: 100%;
+    .news-text {
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .news-image {
+        max-width: 100%; /* Allow full-width on small screens */
     }
 }
-
 
 /* Section styling - used for About, News, etc. */
 .section-box {
