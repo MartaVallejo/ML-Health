@@ -668,9 +668,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* News-Image Slyle*/
+/* Default news image styling (for the news page) */
 .news-image {
-    flex: 0 0 200px; /* Fixed width instead of flex: 1 */
+    flex: 0 0 200px; /* Keep a reasonable size for columns */
     max-width: 200px;
     text-align: center;
 }
@@ -681,19 +681,42 @@ nav a:hover {
     border-radius: 8px;
 }
 
+/* Special styling for the main page */
+#latest-news .news-image {
+    flex: 0 0 400px; /* Make it much larger for standalone display */
+    max-width: 400px;
+    margin: 0 auto; /* Center it */
+}
+
+#latest-news .news-image img {
+    width: 100%;
+}
+/*
 @media (max-width: 768px) {
     .news-item {
-        flex-direction: column; /* Stack text and image on smaller screens */
+        flex-direction: column;
     }
 
     .news-image {
-        flex: unset; /* Reset flex property */
-        max-width: 80%; /* Make the image smaller but not full-width */
-        margin: 0 auto; /* Center the image */
+        flex: unset; 
+        max-width: 80%; 
+        margin: 0 auto; 
     }
 
     .news-image img {
-        width: 100%; /* Let it take the full width of its container */
+        width: 100%; 
+    }
+}
+*/
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .news-image {
+        max-width: 90%; /* Ensures images are larger but not too dominant */
+        margin: 0 auto;
+    }
+
+    .news-image img {
+        width: 100%;
     }
 }
 
