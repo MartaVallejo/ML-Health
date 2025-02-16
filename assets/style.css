@@ -643,6 +643,13 @@ nav a:hover {
     border-radius: 8px;
 }
 
+.news-item h3 {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
 /* News Title */
 .news-title {
     text-align: center;
