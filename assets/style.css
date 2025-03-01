@@ -368,6 +368,49 @@ nav a:hover {
     text-align: center;
 }
 
+.project-box {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 15px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 20px; /* Creates spacing between text and image */
+}
+
+.project-content {
+    flex: 1;
+    text-align: justify;
+}
+
+.project-image {
+    flex: 0 0 200px; /* Fixed width for consistency */
+    text-align: center;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-box {
+        flex-direction: column; /* Stack text and image on smaller screens */
+    }
+
+    .project-image {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .project-image img {
+        width: 80%; /* Slightly smaller for better layout */
+    }
+}
+
 /* Header Content for Team Page */
 #team-header .header-content {
     display: flex;
