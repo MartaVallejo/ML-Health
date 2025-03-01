@@ -842,3 +842,16 @@ nav a:hover {
 .social-icons a:nth-child(3):hover { color: #1da1f2; } /* X (Twitter) */
 .social-icons a:nth-child(4):hover { color: #e4405f; } /* Instagram */
 
+.double-image {
+    display: flex;
+    gap: 10px; /* Adds space between the images */
+    justify-content: center;
+    align-items: center;
+}
+
+.double-image img {
+    width: 48%; /* Ensures the images take equal space */
+    border-radius: 8px; /* Keep the rounded corners */
+    max-height: 200px; /* Adjust as needed */
+    object-fit: cover; /* Ensures the image fills the space properly */
+}
