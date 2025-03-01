@@ -439,6 +439,17 @@ nav a:hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation for hover */
 }
 
+.highlight-role {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333; /* Dark gray for professional look */
+    background-color: #f4f4f4; /* Subtle background highlight */
+    padding: 5px 10px;
+    border-left: 4px solid #0056b3; /* Elegant blue side border */
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
 .member-box:hover {
     transform: scale(1.02); /* Slight zoom effect on hover */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
