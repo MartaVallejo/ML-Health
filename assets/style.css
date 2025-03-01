@@ -852,6 +852,6 @@ nav a:hover {
 .double-image img {
     width: 48%; /* Ensures the images take equal space */
     border-radius: 8px; /* Keep the rounded corners */
-    max-height: 200px; /* Adjust as needed */
+    max-height: 150px; /* Adjust as needed */
     object-fit: cover; /* Ensures the image fills the space properly */
 }
