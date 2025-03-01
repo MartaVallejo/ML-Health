@@ -439,15 +439,18 @@ nav a:hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation for hover */
 }
 
-.highlight-role {
+.member-details .highlight-role {
     font-weight: bold;
-    font-size: 1.1rem;
-    color: #333; /* Dark gray for professional look */
-    background-color: #f4f4f4; /* Subtle background highlight */
-    padding: 5px 10px;
-    border-left: 4px solid #0056b3; /* Elegant blue side border */
-    display: inline-block;
-    margin-bottom: 10px;
+    font-size: 1.2rem; /* Slightly larger for emphasis */
+    color: #222; /* Dark gray for a professional look */
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 8px 12px;
+    border-left: 4px solid #0056b3; /* Blue left border for subtle emphasis */
+    display: block; /* Ensures it appears on a new line */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: fit-content; /* Prevents unnecessary stretching */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .member-box:hover {
