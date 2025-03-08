@@ -394,25 +394,24 @@ nav a:hover {
 
 .project-image {
     flex: 1;
-    max-width: 35%;
+    max-width: 40%; /* 🟢 Increase width dynamically */
     text-align: center;
     border-radius: 8px;
     display: flex;
-    align-items: stretch; /* 🟢 Stretches image to fill full height */
-    justify-content: center; /* Keeps image centered horizontally */
+    align-items: stretch; /* 🟢 Stretches the image to full height */
+    justify-content: center; /* Centers the image horizontally */
     background: #f5f5f5; /* Grey background */
     padding: 10px;
-    min-height: 100%; /* Forces height to match text box */
+    min-height: 100%; /* Ensures the grey box fills the height */
 }
 
 .project-image img {
-    width: 100%;  /* Ensures the image uses full width */
-    height: 100%; /* Ensures the image stretches vertically */
-    max-width: 100%; /* Prevents overflow */
-    max-height: 100%; /* Ensures it uses full height */
-    object-fit: cover; /* 🟢 Fills the grey box completely */
+    width: 100%; /* 🟢 Now fills the entire width */
+    height: 100%; /* Keeps full height */
+    object-fit: contain; /* 🟢 Ensures the entire image is visible */
     border-radius: 8px;
 }
+
 
 /* Header Content for Team Page */
 #team-header .header-content {
