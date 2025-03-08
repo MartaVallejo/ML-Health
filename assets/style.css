@@ -370,48 +370,51 @@ nav a:hover {
 
 .project-box {
     display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ensures spacing */
+    align-items: stretch; /* Makes all elements match the tallest one */
+    justify-content: space-between;
     background-color: #ffffff;
     margin: 15px 0;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    gap: 20px; /* Creates spacing between text and image */
+    gap: 20px; /* Spacing between text and image */
 }
 
 .project-content {
-    flex: 1.5; /* Gives text more space */
+    flex: 1.5; /* Gives more space to text */
     max-width: 65%;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
 }
 
 .project-image {
     flex: 1;
-    max-width: 35%; /* Keeps the image proportional */
+    max-width: 35%;
     text-align: center;
-    padding: 10px; /* Adds a border-like effect */
-    background-color: #f9f9f9; /* Slight contrast to separate from text */
+    padding: 10px;
+    background-color: #f9f9f9;
     border-radius: 8px;
     display: flex;
-    align-items: center; /* Center image */
+    align-items: center;
     justify-content: center;
-    height: 100%; /* Makes the image container full height */
+    height: 100%; /* Matches the tallest element in the box */
 }
 
 .project-image img {
-    width: 100%; /* Ensures full width */
-    height: 100%; /* Stretches image to fill container */
-    max-height: 300px; /* Limits excessive stretching */
+    width: 100%;
+    height: 100%;
+    max-height: 100%; /* Matches the entire project box height */
     border-radius: 8px;
-    object-fit: cover; /* Ensures the image fills the space properly */
+    object-fit: cover; /* Ensures proper scaling */
 }
 
 /* Responsive Design */
 @media (max-width: 900px) {
     .project-box {
-        flex-direction: column; /* Stack text and image on small screens */
+        flex-direction: column;
         text-align: center;
     }
     .project-content {
@@ -419,12 +422,11 @@ nav a:hover {
     }
     .project-image {
         max-width: 100%;
-        padding: 5px; /* Reduces padding on smaller screens */
-        height: auto; /* Prevents forced stretching */
+        height: auto;
     }
     .project-image img {
-        max-height: 250px; /* Ensures better scaling on mobile */
-        object-fit: contain; /* Prevents cropping on smaller screens */
+        max-height: 250px;
+        object-fit: contain;
     }
 }
 
