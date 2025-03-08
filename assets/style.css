@@ -408,10 +408,11 @@ nav a:hover {
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures image fills the grey box */
     border-radius: 8px;
     padding: 0;
     margin: 0;
+    max-height: 100%; /* Ensures the image uses the full height */
 }
 
 /* Header Content for Team Page */
