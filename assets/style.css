@@ -371,6 +371,7 @@ nav a:hover {
 .project-box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #ffffff;
     margin: 15px 0;
     padding: 20px;
@@ -381,33 +382,34 @@ nav a:hover {
 }
 
 .project-content {
-    flex: 1;
+    flex: 2; /* Allows text to take up more space but doesn't push the image too much */
+    max-width: 60%; /* Ensures text doesn’t extend infinitely */
     text-align: justify;
 }
 
 .project-image {
-    flex: 0 0 200px; /* Fixed width for consistency */
+    flex: 1; /* Allows image to grow but keeps a balanced size */
+    max-width: 250px; /* Prevents image from becoming too large */
     text-align: center;
 }
 
 .project-image img {
-    width: 50%;
+    width: 100%; /* Ensures it scales properly */
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
+/* Responsive Adjustments for Mobile */
 @media (max-width: 768px) {
     .project-box {
-        flex-direction: column; /* Stack text and image on smaller screens */
+        flex-direction: column; /* Stacks text and image */
+        text-align: center;
     }
-
+    .project-content {
+        max-width: 100%; /* Allows text to take full width */
+    }
     .project-image {
-        width: 100%; /* Full width on mobile */
-    }
-
-    .project-image img {
-        width: 80%; /* Slightly smaller for better layout */
+        max-width: 100%; /* Allows larger image on mobile */
     }
 }
 
