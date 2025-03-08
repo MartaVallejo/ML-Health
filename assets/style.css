@@ -390,7 +390,6 @@ nav a:hover {
     flex-direction: column;
     justify-content: center; /* Aligns content properly */
     margin: 0; /* Remove extra margin */
-    border: 2px solid blue;
 }
 
 .project-image {
@@ -414,6 +413,7 @@ nav a:hover {
     max-height: 100%; /* Ensures it uses full height */
     object-fit: contains; /* 🟢 Fills the grey box completely */
     border-radius: 8px;
+    border: 2px solid blue;
 }
 
 /* Header Content for Team Page */
