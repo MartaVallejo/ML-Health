@@ -398,19 +398,19 @@ nav a:hover {
     text-align: center;
     border-radius: 8px;
     display: flex;
-    align-items: center; /* Centers image vertically */
-    justify-content: center; /* Centers image horizontally */
+    align-items: stretch; /* 🟢 Stretches image to fill full height */
+    justify-content: center; /* Keeps image centered horizontally */
     background: #f5f5f5; /* Grey background */
     padding: 10px;
     min-height: 100%; /* Forces height to match text box */
 }
 
 .project-image img {
-    width: auto;  /* Maintain aspect ratio */
-    height: 100%; /* Ensure it fills the height */
-    max-width: 100%; /* Prevents oversizing */
-    max-height: 100%; /* Ensures the image uses the full height */
-    object-fit: contain; /* Prevents cropping while fitting inside the box */
+    width: 100%;  /* Ensures the image uses full width */
+    height: 100%; /* Ensures the image stretches vertically */
+    max-width: 100%; /* Prevents overflow */
+    max-height: 100%; /* Ensures it uses full height */
+    object-fit: cover; /* 🟢 Fills the grey box completely */
     border-radius: 8px;
 }
 
