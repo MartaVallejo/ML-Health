@@ -378,7 +378,7 @@ nav a:hover {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    gap: 10px; /* Adjust spacing between text and image */
+    gap: 15px; /* Adjust spacing between text and image */
     min-height: 200px; /* Ensures consistency in height */
 }
 
@@ -390,6 +390,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center; /* Aligns content properly */
     margin: 0; /* Remove extra margin */
+    border: 2px solid blue;
 }
 
 .project-image {
