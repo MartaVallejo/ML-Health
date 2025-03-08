@@ -391,30 +391,27 @@ nav a:hover {
     justify-content: center; /* Aligns content properly */
     margin: 0; /* Remove extra margin */
 }
+
 .project-image {
     flex: 1;
-    max-width: 40%; /* Increased from 35% to allocate more space for the image */
+    max-width: 35%;
     text-align: center;
     border-radius: 8px;
     display: flex;
-    align-items: center; /* Keeps image centered vertically */
-    justify-content: center;
-    background: #f5f5f5;
+    align-items: center; /* Centers image vertically */
+    justify-content: center; /* Centers image horizontally */
+    background: #f5f5f5; /* Grey background */
     padding: 10px;
-    min-height: 100%; /* Ensures the grey box matches the height of the text */
-    height: auto; /* Allows it to expand dynamically */
-    flex-grow: 0; /* Prevents excessive stretching */
+    min-height: 100%; /* Forces height to match text box */
 }
 
 .project-image img {
     width: auto;  /* Maintain aspect ratio */
-    height: 100%; /* Allow it to fill the height */
-    max-width: 100%; /* Ensure it does not overflow */
+    height: 100%; /* Ensure it fills the height */
+    max-width: 100%; /* Prevents oversizing */
     max-height: 100%; /* Ensures the image uses the full height */
-    object-fit: contain; /* Keeps full image visible inside the box */
+    object-fit: contain; /* Prevents cropping while fitting inside the box */
     border-radius: 8px;
-    padding: 0;
-    margin: 0;
 }
 
 /* Header Content for Team Page */
