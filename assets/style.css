@@ -401,6 +401,7 @@ nav a:hover {
     justify-content: center;
     background: #f5f5f5; /* Keep the gray background */
     padding: 10px; /* Ensure the image has some spacing */
+    height: 100%; /* 🟢 Forces it to match the height of the project box */
 }
 
 .project-image img {
