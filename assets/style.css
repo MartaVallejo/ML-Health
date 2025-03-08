@@ -371,7 +371,7 @@ nav a:hover {
 .project-box {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures proper spacing */
+    justify-content: space-between; /* Ensures spacing */
     background-color: #ffffff;
     margin: 15px 0;
     padding: 20px;
@@ -389,19 +389,23 @@ nav a:hover {
 
 .project-image {
     flex: 1;
-    max-width: 35%; /* Keeps the image proportionate to text */
+    max-width: 35%; /* Keeps the image proportional */
     text-align: center;
     padding: 10px; /* Adds a border-like effect */
     background-color: #f9f9f9; /* Slight contrast to separate from text */
     border-radius: 8px;
+    display: flex;
+    align-items: center; /* Center image */
+    justify-content: center;
+    height: 100%; /* Makes the image container full height */
 }
 
 .project-image img {
-    width: 100%; /* Fills the container */
-    height: auto;
-    max-height: 250px; /* Prevents extreme stretching */
+    width: 100%; /* Ensures full width */
+    height: 100%; /* Stretches image to fill container */
+    max-height: 300px; /* Limits excessive stretching */
     border-radius: 8px;
-    object-fit: contain; /* Ensures proper aspect ratio */
+    object-fit: cover; /* Ensures the image fills the space properly */
 }
 
 /* Responsive Design */
@@ -416,9 +420,11 @@ nav a:hover {
     .project-image {
         max-width: 100%;
         padding: 5px; /* Reduces padding on smaller screens */
+        height: auto; /* Prevents forced stretching */
     }
     .project-image img {
-        max-height: 200px; /* Reduces size for better mobile fit */
+        max-height: 250px; /* Ensures better scaling on mobile */
+        object-fit: contain; /* Prevents cropping on smaller screens */
     }
 }
 
