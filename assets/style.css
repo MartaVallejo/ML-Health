@@ -371,30 +371,30 @@ nav a:hover {
 .project-box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Ensures balanced spacing */
     background-color: #ffffff;
     margin: 15px 0;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    gap: 20px; /* Creates spacing between text and image */
+    gap: 30px; /* Increases spacing between text and image */
 }
 
 .project-content {
-    flex: 2; /* Allows text to take up more space but doesn't push the image too much */
+    flex: 2; /* Gives more space to text */
     max-width: 60%; /* Ensures text doesn’t extend infinitely */
     text-align: justify;
 }
 
 .project-image {
-    flex: 1; /* Allows image to grow but keeps a balanced size */
-    max-width: 250px; /* Prevents image from becoming too large */
+    flex: 1; /* Allows image to grow but maintains balance */
+    max-width: 300px; /* Increases the size of images */
     text-align: center;
 }
 
 .project-image img {
-    width: 100%; /* Ensures it scales properly */
+    width: 100%; /* Ensures images scale properly */
     height: auto;
     border-radius: 8px;
 }
@@ -409,7 +409,7 @@ nav a:hover {
         max-width: 100%; /* Allows text to take full width */
     }
     .project-image {
-        max-width: 100%; /* Allows larger image on mobile */
+        max-width: 100%; /* Allows images to expand on smaller screens */
     }
 }
 
