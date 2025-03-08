@@ -371,40 +371,43 @@ nav a:hover {
 .project-box {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures text and image are balanced */
+    justify-content: space-between; /* Ensures proper spacing */
     background-color: #ffffff;
     margin: 15px 0;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    gap: 20px; /* Controls spacing between text and image */
+    gap: 20px; /* Creates spacing between text and image */
 }
 
 .project-content {
-    flex: 1.5; /* Allows text to take more space */
-    max-width: 65%; /* Prevents text from stretching too much */
+    flex: 1.5; /* Gives text more space */
+    max-width: 65%;
     text-align: justify;
 }
 
 .project-image {
-    flex: 1; /* Allows image to resize within constraints */
-    max-width: 350px; /* Forces a larger size */
+    flex: 1;
+    max-width: 35%; /* Keeps the image proportionate to text */
     text-align: center;
+    padding: 10px; /* Adds a border-like effect */
+    background-color: #f9f9f9; /* Slight contrast to separate from text */
+    border-radius: 8px;
 }
 
 .project-image img {
-    width: 100%; /* Ensures images expand properly */
+    width: 100%; /* Fills the container */
     height: auto;
-    max-height: 250px; /* Limits excessive stretching */
+    max-height: 250px; /* Prevents extreme stretching */
     border-radius: 8px;
-    object-fit: cover; /* Ensures images maintain a good aspect ratio */
+    object-fit: contain; /* Ensures proper aspect ratio */
 }
 
 /* Responsive Design */
 @media (max-width: 900px) {
     .project-box {
-        flex-direction: column; /* Stacks text and image on smaller screens */
+        flex-direction: column; /* Stack text and image on small screens */
         text-align: center;
     }
     .project-content {
@@ -412,13 +415,12 @@ nav a:hover {
     }
     .project-image {
         max-width: 100%;
-        text-align: center;
+        padding: 5px; /* Reduces padding on smaller screens */
     }
     .project-image img {
-        max-height: 200px; /* Adjusts for smaller screens */
+        max-height: 200px; /* Reduces size for better mobile fit */
     }
 }
-
 
 /* Header Content for Team Page */
 #team-header .header-content {
