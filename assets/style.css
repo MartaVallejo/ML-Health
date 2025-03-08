@@ -371,47 +371,54 @@ nav a:hover {
 .project-box {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures balanced spacing */
+    justify-content: space-between; /* Ensures text and image are balanced */
     background-color: #ffffff;
     margin: 15px 0;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    gap: 30px; /* Increases spacing between text and image */
+    gap: 20px; /* Controls spacing between text and image */
 }
 
 .project-content {
-    flex: 2; /* Gives more space to text */
-    max-width: 60%; /* Ensures text doesn’t extend infinitely */
+    flex: 1.5; /* Allows text to take more space */
+    max-width: 65%; /* Prevents text from stretching too much */
     text-align: justify;
 }
 
 .project-image {
-    flex: 1; /* Allows image to grow but maintains balance */
-    max-width: 300px; /* Increases the size of images */
+    flex: 1; /* Allows image to resize within constraints */
+    max-width: 350px; /* Forces a larger size */
     text-align: center;
 }
 
 .project-image img {
-    width: 100%; /* Ensures images scale properly */
+    width: 100%; /* Ensures images expand properly */
     height: auto;
+    max-height: 250px; /* Limits excessive stretching */
     border-radius: 8px;
+    object-fit: cover; /* Ensures images maintain a good aspect ratio */
 }
 
-/* Responsive Adjustments for Mobile */
-@media (max-width: 768px) {
+/* Responsive Design */
+@media (max-width: 900px) {
     .project-box {
-        flex-direction: column; /* Stacks text and image */
+        flex-direction: column; /* Stacks text and image on smaller screens */
         text-align: center;
     }
     .project-content {
-        max-width: 100%; /* Allows text to take full width */
+        max-width: 100%;
     }
     .project-image {
-        max-width: 100%; /* Allows images to expand on smaller screens */
+        max-width: 100%;
+        text-align: center;
+    }
+    .project-image img {
+        max-height: 200px; /* Adjusts for smaller screens */
     }
 }
+
 
 /* Header Content for Team Page */
 #team-header .header-content {
