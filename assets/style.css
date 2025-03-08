@@ -394,7 +394,7 @@ nav a:hover {
 
 .project-image {
     flex: 1;
-    max-width: 50%;
+    max-width: 100%;
     text-align: center;
     border-radius: 8px;
     display: flex;
