@@ -379,7 +379,7 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     gap: 15px; /* Adjust spacing between text and image */
-    min-height: 200px; /* Ensures consistency in height */
+    min-height: 250px; /* Adjust height if needed */
 }
 
 .project-content {
@@ -395,27 +395,28 @@ nav a:hover {
 .project-image {
     flex: 1;
     display: flex;
-    max-width: 100%;
+    width: 100%; /* 🔹 Ensures it fills the container */
     text-align: center;
     border-radius: 8px;
-    align-items: center; /* 🟢 Stretches image to fill full height */
-    justify-content: center; /* Keeps image centered horizontally */
+    align-items: center; /* 🔹 Stretches image */
+    justify-content: center; /* 🔹 Centers it */
     background: #f5f5f5; /* Grey background */
-    padding: 10px;
-    min-height: 100%; /* Forces height to match text box */
+    padding: 0; /* 🔹 Remove extra padding */
+    min-height: 100%; /* Ensure it grows fully */
     border: 2px solid red;
 }
 
 .project-image img {
-    width:100%;  /* Ensures the image uses full width */
-    height: 100%; /* Ensures the image stretches vertically */
-    max-width: 100%; /* Prevents overflow */
-    max-height: 100%; /* Ensures it uses full height */
-    object-fit: contain; /* 🟢 Fills the grey box completely */
+    width: 100%;  /* 🔹 Ensures full width */
+    height: 100%; /* 🔹 Ensures full height */
+    max-width: none; /* 🔹 Prevents unnecessary restriction */
+    max-height: none; /* 🔹 Allows full stretch */
+    object-fit: cover; /* 🔹 Switch from contain to cover */
     border-radius: 8px;
     padding: 0;  /* Remove padding to give full width */
     border: 2px solid blue;
 }
+
 
 /* Header Content for Team Page */
 #team-header .header-content {
@@ -756,23 +757,7 @@ nav a:hover {
 #latest-news .news-image img {
     width: 100%;
 }
-/*
-@media (max-width: 768px) {
-    .news-item {
-        flex-direction: column;
-    }
 
-    .news-image {
-        flex: unset; 
-        max-width: 80%; 
-        margin: 0 auto; 
-    }
-
-    .news-image img {
-        width: 100%; 
-    }
-}
-*/
 /* Adjust for Mobile Screens */
 @media (max-width: 768px) {
     .news-item {
