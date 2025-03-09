@@ -1,14 +1,19 @@
-function matchProjectImageHeight() {
-    document.querySelectorAll('.project-box').forEach(project => {
-        let textHeight = project.querySelector('.project-content').offsetHeight;
-        let imageContainer = project.querySelector('.project-image');
+document.addEventListener("DOMContentLoaded", function () {
+    function adjustImageHeight() {
+        document.querySelectorAll(".project-box").forEach((box) => {
+            const content = box.querySelector(".project-content");
+            const image = box.querySelector(".project-image img");
 
-        if (imageContainer) {
-            imageContainer.style.height = textHeight + "px"; // Force height match
-        }
-    });
-}
+            if (content && image) {
+                const contentHeight = content.clientHeight;
+                image.style.height = `${contentHeight}px`;
+            }
+        });
+    }
 
-// Run function on page load and when window resizes
-window.addEventListener("load", matchProjectImageHeight);
-window.addEventListener("resize", matchProjectImageHeight);
+    adjustImageHeight();
+
+    // Adjust on window resize
+    window.addEventListener("resize", adjustImageHeight);
+});
+
