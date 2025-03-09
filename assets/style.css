@@ -370,7 +370,7 @@ nav a:hover {
 
 .project-box {
     display: flex;
-    align-items: stretch; /* Ensures all elements match the tallest one */
+    align-items: stretch; /* 🟢 Ensures all elements match the tallest one */
     justify-content: space-between;
     background-color: #ffffff;
     margin: 10px 0; /* Reduce overall margin */
@@ -379,7 +379,7 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     gap: 15px; /* Adjust spacing between text and image */
-    min-height: 250px; /* Adjust height if needed */
+    min-height: 250px; /* 🟢 Keeps consistency */
 }
 
 .project-content {
@@ -388,34 +388,34 @@ nav a:hover {
     text-align: justify;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Aligns content properly */
+    justify-content: center; /* 🟢 Aligns text properly */
     margin: 0; /* Remove extra margin */
 }
 
 .project-image {
     flex: 1;
     display: flex;
-    width: 100%; /* 🔹 Ensures it fills the container */
+    width: 100%;
     text-align: center;
     border-radius: 8px;
-    align-items: center; /* 🔹 Stretches image */
-    justify-content: center; /* 🔹 Centers it */
+    align-items: center; /* 🟢 Stretches image to match text */
+    justify-content: center;
     background: #f5f5f5; /* Grey background */
-    padding: 0; /* 🔹 Remove extra padding */
-    min-height: 100%; /* Ensure it grows fully */
+    padding: 10px;
+    max-height: 100%; /* 🟢 Keeps image height equal to text */
     border: 2px solid red;
 }
 
 .project-image img {
-    width: 100%;  /* 🔹 Ensures full width */
-    height: 100%; /* 🔹 Ensures full height */
-    max-width: none; /* 🔹 Prevents unnecessary restriction */
-    max-height: none; /* 🔹 Allows full stretch */
-    object-fit: cover; /* 🔹 Switch from contain to cover */
+    width: auto;  /* 🟢 Maintain aspect ratio */
+    height: 100%; /* 🟢 Keep same height as text */
+    max-width: 100%; /* 🟢 Prevents overflow */
+    object-fit: contain; /* 🟢 Ensures full visibility without cropping */
     border-radius: 8px;
-    padding: 0;  /* Remove padding to give full width */
+    padding: 0;
     border: 2px solid blue;
 }
+
 
 
 /* Header Content for Team Page */
