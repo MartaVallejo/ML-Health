@@ -394,22 +394,19 @@ nav a:hover {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch; /* 🟢 Matches text height */
     background: #f5f5f5;
     padding: 10px;
     border-radius: 8px;
-    height: auto; /* Ensure it can expand */
-    min-height: 100%; /* 🔹 Tries to match the text height */
 }
 
 .project-image img {
-    width: auto;  /* 🔹 Maintain aspect ratio */
-    height: 100%; /* 🔹 Match text height */
+    width: auto;  /* 🟢 Maintain aspect ratio */
+    height: 100%; /* 🟢 Match text height dynamically */
     max-width: 100%;
-    object-fit: contain; /* 🔹 Ensures full visibility without cropping */
+    object-fit: contain;
     border-radius: 8px;
 }
-
 
 
 /* Header Content for Team Page */
