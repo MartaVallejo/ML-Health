@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://martavallejo.github.io/ML-Health/sitemap.xml
