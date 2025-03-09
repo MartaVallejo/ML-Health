@@ -405,8 +405,8 @@ nav a:hover {
 }
 
 .project-image img {
-    width: 100%;  /* 🟢 Maintain aspect ratio */
-    height: auto; /* 🟢 Match text height */
+    width: auto;  /* 🟢 Maintain aspect ratio */
+    height: 100%; /* 🟢 Match text height */
     max-width: 100%; /* 🟢 Prevent overflow */
     object-fit: cover; /* 🟢 Ensures full visibility without cropping */
     border-radius: 8px;
