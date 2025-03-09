@@ -379,7 +379,7 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     gap: 15px; /* Adjust spacing between text and image */
-    min-height: 250px; /* Adjust height if needed */
+    min-height: 300px; /* Adjust height if needed */
 }
 
 .project-content {
