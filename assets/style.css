@@ -407,8 +407,8 @@ nav a:hover {
 }
 
 .project-image img {
-    width:100%;  /* Ensures the image uses full width */
-    height: 100%; /* Ensures the image stretches vertically */
+    width:auto;  /* Ensures the image uses full width */
+    height: auto; /* Ensures the image stretches vertically */
     max-width: 100%; /* Prevents overflow */
     max-height: 100%; /* Ensures it uses full height */
     object-fit: contain; /* 🟢 Fills the grey box completely */
