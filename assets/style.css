@@ -370,7 +370,7 @@ nav a:hover {
 
 .project-box {
     display: flex;
-    align-items: stretch; /* 🔹 Ensures text and image have the same height */
+    align-items: stretch; /* 🔹 Ensures both elements take the full height */
     justify-content: space-between;
     background-color: #ffffff;
     margin: 10px 0;
@@ -387,17 +387,19 @@ nav a:hover {
     text-align: justify;
     display: flex;
     flex-direction: column;
+    height: 100%; /* 🔹 Forces text section to have defined height */
 }
 
 .project-image {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: stretch; /* 🔹 Forces the image to take full height */
+    align-items: center;
     background: #f5f5f5;
     padding: 10px;
     border-radius: 8px;
-    height: auto; /* Ensures it takes the height of .project-content */
+    height: auto; /* Ensure it can expand */
+    min-height: 100%; /* 🔹 Tries to match the text height */
 }
 
 .project-image img {
@@ -407,6 +409,7 @@ nav a:hover {
     object-fit: contain; /* 🔹 Ensures full visibility without cropping */
     border-radius: 8px;
 }
+
 
 
 /* Header Content for Team Page */
