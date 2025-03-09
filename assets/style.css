@@ -409,9 +409,9 @@ nav a:hover {
 .project-image img {
     width: 100%;  /* 🔹 Ensures full width */
     height: 100%; /* 🔹 Ensures full height */
-    max-width: none; /* 🔹 Prevents unnecessary restriction */
-    max-height: none; /* 🔹 Allows full stretch */
-    object-fit: cover; /* 🔹 Switch from contain to cover */
+    max-width: 100%; /* 🔹 Prevents unnecessary restriction */
+    max-height: 100%; /* 🔹 Allows full stretch */
+    object-fit: fill; /* 🔹 Switch from contain to cover */
     border-radius: 8px;
     padding: 0;  /* Remove padding to give full width */
     border: 2px solid blue;
