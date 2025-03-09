@@ -379,7 +379,7 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     gap: 15px; /* Adjust spacing between text and image */
-    min-height: 300px; /* Adjust height if needed */
+    min-height: 250px; /* Adjust height if needed */
 }
 
 .project-content {
@@ -396,10 +396,9 @@ nav a:hover {
     flex: 1;
     display: flex;
     width: 100%; /* 🔹 Ensures it fills the container */
-    height: 100%; /* 🔹 Ensures full height */
     text-align: center;
     border-radius: 8px;
-    align-items: stretch; /* Stretch image fully */
+    align-items: center; /* 🔹 Stretches image */
     justify-content: center; /* 🔹 Centers it */
     background: #f5f5f5; /* Grey background */
     padding: 0; /* 🔹 Remove extra padding */
@@ -410,9 +409,9 @@ nav a:hover {
 .project-image img {
     width: 100%;  /* 🔹 Ensures full width */
     height: 100%; /* 🔹 Ensures full height */
-    max-width: 100%; /* 🔹 Prevents unnecessary restriction */
-    max-height: 100%; /* 🔹 Allows full stretch */
-    object-fit: fill; /* 🔹 Switch from contain to cover */
+    max-width: none; /* 🔹 Prevents unnecessary restriction */
+    max-height: none; /* 🔹 Allows full stretch */
+    object-fit: cover; /* 🔹 Switch from contain to cover */
     border-radius: 8px;
     padding: 0;  /* Remove padding to give full width */
     border: 2px solid blue;
