@@ -674,13 +674,6 @@ nav a:hover {
     gap: 15px;
 }
 
-/* Content and image */
-.news-content {
-    display: flex;
-    flex: 1;
-    gap: 15px;
-}
-
 .news-text {
     flex: 1.5;
     max-width: 65%;
@@ -774,17 +767,3 @@ nav a:hover {
 .social-icons a:nth-child(2):hover { color: #a6ce39; } /* ORCID */
 .social-icons a:nth-child(3):hover { color: #1da1f2; } /* X (Twitter) */
 .social-icons a:nth-child(4):hover { color: #e4405f; } /* Instagram */
-
-.double-image {
-    display: flex;
-    gap: 10px; /* Adds space between the images */
-    justify-content: center;
-    align-items: center;
-}
-
-.double-image img {
-    width: 48%; /* Ensures the images take equal space */
-    border-radius: 8px; /* Keep the rounded corners */
-    max-height: 150px; /* Adjust as needed */
-    object-fit: cover; /* Ensures the image fills the space properly */
-}
