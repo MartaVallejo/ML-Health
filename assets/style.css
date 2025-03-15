@@ -651,7 +651,7 @@ nav a:hover {
     color: #666; /* Adjust text color */
 }
 
-/* News-main Section */
+/* General News Section */
 .news-container {
     display: flex;
     flex-direction: column;
@@ -662,12 +662,12 @@ nav a:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Individual news item styling */
+/* Individual News Item */
 .news-item {
     display: flex;
-    flex-direction: row; /* Change to row for side-by-side layout */
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* Ensures even spacing */
+    justify-content: space-between;
     background: #fff;
     border: 1px solid #ddd;
     padding: 20px;
@@ -677,12 +677,12 @@ nav a:hover {
     gap: 20px;
 }
 
-/* Make text and image take equal space */
+/* News Text */
 .news-text {
     flex: 1;
     text-align: justify;
     line-height: 1.6;
-    padding-right: 20px; /* Add space between text and image */
+    padding-right: 20px;
 }
 
 .news-item h3 {
@@ -701,67 +701,46 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.news-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-}
-
-/* Ensure the link appears in its own row */
-.news-link {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.news-link a {
-    display: inline-block;
-    font-weight: bold;
-    text-decoration: none;
-    color: #1a73e8;
-}
-
-.news-link a:hover {
-    text-decoration: underline;
-}
-
-/* Default news image styling (for the news page) */
+/* Default News Image */
 .news-image {
-    flex: 0 1 250px; /* Increase image size */
+    flex: 0 1 250px;
     max-width: 250px;
     text-align: center;
 }
 
 .news-image img {
-    width: 100%; /* Ensures image scales within container */
+    width: 100%;
     border-radius: 8px;
 }
 
-
-/* Special styling for the main page */
+/* -- MAIN PAGE SPECIAL STYLING -- */
 #latest-news .news-image {
-    flex: 0 0 400px; /* Make it much larger for standalone display */
+    flex: 0 0 400px;
     max-width: 400px;
-    margin: 0 auto; /* Center it */
+    margin: 0 auto;
 }
 
 #latest-news .news-image img {
     width: 100%;
 }
 
-/* Adjust for Mobile Screens */
+/* Mobile responsive */
 @media (max-width: 768px) {
     .news-item {
-        flex-direction: column; /* Stack image and text on small screens */
+        flex-direction: column;
         align-items: center;
     }
 
     .news-text {
-        padding-right: 0; /* Remove right padding */
+        padding-right: 0;
     }
 
     .news-image {
-        max-width: 100%; /* Allow full-width on small screens */
+        max-width: 100%;
+    }
+
+    #latest-news .news-image {
+        max-width: 100%;
     }
 }
 
