@@ -701,8 +701,8 @@ nav a:hover {
 
 .news-image {
     flex: 1; /* Let the image container take remaining space proportionally */
-    min-width: 250px; /* Minimum size */
-    max-width: 40%; /* Max relative to the news item */
+    min-width: 300px; /* Minimum size */
+    max-width: 50%; /* Max relative to the news item */
     background: #f5f5f5; /* Grey background */
     border-radius: 8px;
     padding: 10px;
