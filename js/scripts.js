@@ -1,19 +1,36 @@
-document.addEventListener("DOMContentLoaded", function () {
-    function adjustImageHeight() {
-        document.querySelectorAll(".project-box").forEach((box) => {
-            const content = box.querySelector(".project-content");
-            const image = box.querySelector(".project-image img");
+// Adjust heights for project images
+function adjustProjectImages() {
+    const projects = document.querySelectorAll('.project-box');
+    projects.forEach(project => {
+        const text = project.querySelector('.project-content');
+        const image = project.querySelector('.project-image img');
+        if (text && image) {
+            image.style.height = `${text.offsetHeight}px`; // Set image height based on text height
+        }
+    });
+}
 
-            if (content && image) {
-                const contentHeight = content.clientHeight;
-                image.style.height = `${contentHeight}px`;
-            }
-        });
-    }
+// Adjust heights for news images
+function adjustNewsImages() {
+    const newsItems = document.querySelectorAll('.news-item');
+    newsItems.forEach(item => {
+        const text = item.querySelector('.news-text');
+        const image = item.querySelector('.news-image img');
+        if (text && image) {
+            image.style.height = `${text.offsetHeight}px`; // Set image height based on text height
+        }
+    });
+}
 
-    adjustImageHeight();
-
-    // Adjust on window resize
-    window.addEventListener("resize", adjustImageHeight);
+// Run both functions on load and resize
+window.addEventListener('load', () => {
+    adjustProjectImages();
+    adjustNewsImages();
 });
+
+window.addEventListener('resize', () => {
+    adjustProjectImages();
+    adjustNewsImages();
+});
+
 
