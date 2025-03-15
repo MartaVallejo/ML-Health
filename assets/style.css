@@ -693,7 +693,7 @@ nav a:hover {
 }
 
 .news-image {
-    flex: 1;
+    flex: 0 1 300px; /* Adjust width but allow flexibility */
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -701,6 +701,9 @@ nav a:hover {
     padding: 10px;
     border-radius: 8px;
     min-height: 100%;
+    height: auto; /* Important: allow to adapt */
+    max-height: 100%; /* Important: do not overflow */
+    box-sizing: border-box; /* Ensure padding is included */
 }
 
 .news-image img {
