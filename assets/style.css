@@ -607,14 +607,23 @@ nav a:hover {
 
 .collaborator-box {
     display: flex;
-    align-items: center;
-    background: #ffffff; /* White background for consistency */
-    border: 1px solid #ddd; /* Light gray border */
-    border-radius: 8px; /* Rounded corners for a smoother look */
+    align-items: flex-start; /* Align top */
+    justify-content: space-between; /* Space between details and video */
+    flex-wrap: wrap; /* Stack on smaller screens */
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.collaborator-video {
+    flex: 0 0 320px; /* Fixed width for the video */
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .collaborator-box:hover {
@@ -653,6 +662,13 @@ nav a:hover {
     display: inline; /* Ensures dates stay on the same line */
     font-size: 1rem;
     color: #666; /* Adjust text color */
+}
+
+@media (max-width: 768px) {
+    .collaborator-video {
+        flex: 1 1 100%;
+        margin-top: 20px;
+    }
 }
 
 /* Container for latest news */
