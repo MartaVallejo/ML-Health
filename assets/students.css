@@ -149,6 +149,13 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-top: 10px;
+}
+
 /* Profile Photo Styling */
 .profile-photo {
     width: 100px;
