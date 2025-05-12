@@ -1,7 +1,5 @@
-/* STUDENTS PAGE STYLES */
-
-/* Layout for Columns */
-.student-columns {
+/* STUDENT SECTION ONLY */
+#students .student-columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
@@ -9,8 +7,7 @@
     padding: 0 20px;
 }
 
-/* Member Box Styling */
-.member-box {
+#students .member-box {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -22,8 +19,7 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Profile Image */
-.profile-photo {
+#students .profile-photo {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -31,63 +27,54 @@
     margin-right: 20px;
 }
 
-/* Member Details */
-.member-details {
+#students .member-details {
     flex: 1;
 }
 
-.member-details h3 {
+#students .member-details h3 {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 8px;
 }
 
-.member-details span {
+#students .member-details span {
     font-size: 1rem;
     color: #666;
 }
 
-.member-details p {
+#students .member-details p {
     margin: 8px 0;
     color: #555;
 }
 
-.member-details a {
+#students .member-details a {
     color: #1a73e8;
     text-decoration: none;
 }
 
-.member-details a:hover {
+#students .member-details a:hover {
     text-decoration: underline;
 }
 
-.member-box:hover {
+#students .member-box:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Section Titles */
-#students h2, #alumni h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #222;
-    margin-bottom: 30px;
-}
-
-/* Responsive for Mobile Devices */
+/* Responsive Layout for Mobile Devices */
 @media (max-width: 600px) {
-    .member-box {
+    #students .member-box {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .profile-photo {
+    #students .profile-photo {
         margin-right: 0;
         margin-bottom: 15px;
     }
 
-    .member-details h3 {
+    #students .member-details h3 {
         font-size: 1.3rem;
     }
 }
