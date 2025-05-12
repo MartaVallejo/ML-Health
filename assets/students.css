@@ -1,11 +1,4 @@
 /* STUDENT SECTION ONLY */
-#students .student-columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-    padding: 0 20px;
-}
 
 /* Style for column titles like 'Healthcare', 'Robotics' */
 #students .student-column > h3 {
@@ -91,13 +84,6 @@
 }
 
 /* Apply Two-Column Layout Only in the Students Section */
-#students .student-columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-    padding: 0 20px;
-}
 
 /* Keep Existing Styles for .member-box, but Add Responsive Adjustments */
 #students .member-box {
