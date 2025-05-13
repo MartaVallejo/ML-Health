@@ -179,4 +179,28 @@
     }
 }
 
+.member-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.member-video {
+    flex-shrink: 0;
+}
+
+@media (max-width: 800px) {
+    .member-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-video {
+        margin-top: 15px;
+    }
+}
+
+
 
